@@ -1,0 +1,21 @@
+:root{
+    --fundo:#1b1b1b;
+    --cor-tecla:tomato;
+}
+body{
+    background-color: var(--fundo);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+table, td{
+    border: solid white;
+}
+.tecla{
+    text-align: center;
+    width: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--cor-tecla);
+    color: white;
+}
