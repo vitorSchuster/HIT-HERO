@@ -1,6 +1,7 @@
 :root{
     --fundo:#1b1b1b;
     --cor-tecla:tomato;
+    --cor-caminho:lightgreen;
 }
 body{
     background-color: var(--fundo);
@@ -22,4 +23,24 @@ table, td{
     border-radius: 5px;
     padding: 10px;
     color: white;
+}
+
+.bottom{
+    position: absolute;
+    top: auto;
+    bottom: 0;
+}
+
+
+#elemento0,#elemento1,#elemento2,#elemento3{
+    display:block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--cor-caminho) ;
+}
+
+.filho, article{
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
 }

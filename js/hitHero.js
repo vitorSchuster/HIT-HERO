@@ -1,5 +1,4 @@
-var posição_elementos = ["elemento0", "elemento1", "elemento2", "elemento3"]
-
+var posição_elementos = ["0", "1", "2", "3"]
 
 document.addEventListener('keydown', function (event) {
   switch (event.key) {
@@ -52,25 +51,35 @@ document.addEventListener('keyup', function (event) {
 
 //elementos "obstacúlos"
 
-// function randomElement(a,b){
-//   return Math.floor(Math.random () * (b - a + 1)) + a
-// }
-
+setInterval(() => {
+  
 function randomElement(a, b) {
   return Math.floor(Math.random() * (b - a + 1)) + a
 }
-
-switch (randomElement(1, 3)) {
+switch (randomElement(0, 3)) {
   case 0:
+    var elem = document.getElementById(`elemento0`)
+
     console.log(posição_elementos[0])
     break
   case 1:
+    var elem = document.getElementById(`elemento1`)
     console.log(posição_elementos[1])
     break
   case 2:
+    var elem = document.getElementById(`elemento2`)
     console.log(posição_elementos[2])
     break
   case 3:
+    var elem = document.getElementById(`elemento3`)
     console.log(posição_elementos[3])
     break
+
+    
 }
+}, 1000);
+
+// filho.classList.add(`filho`);//adiciona classe
+// var elem = document.getElementById(`lista${linha}`)
+// const filho = elem.appendChild(document.createElement(`p`));
+
