@@ -12,10 +12,10 @@ table, td{
     border: solid white;
 }
 .tecla{
+    background-color: var(--cor-tecla);
     text-align: center;
     width: 20px;
     border-radius: 5px;
     padding: 10px;
-    background-color: var(--cor-tecla);
     color: white;
 }
