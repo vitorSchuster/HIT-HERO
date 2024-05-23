@@ -39,7 +39,8 @@ table, td{
     background-color: var(--cor-caminho) ;
 }
 
-.filho, article{
+article{
+    /* position: absolute; */
     width: 40px;
     height: 40px;
     background-color: blueviolet;
